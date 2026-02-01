@@ -1,0 +1,6 @@
+id,topic,content,tags
+1,pricing,"Our service packages are monthly and designed for fast time-to-value. Most clients launch within 14–30 days depending on scope.",pricing,packages,timeline
+2,timeline,"Typical delivery: Discovery (2–3 days) → Build (7–14 days) → QA (2–4 days) → Launch.",timeline,process
+3,seo,"We implement technical SEO basics (metadata, headings, performance, mobile) and provide an on-page checklist for ongoing optimization.",seo,performance
+4,security,"Static sites reduce attack surface. We still apply HTTPS, forms hardening, and uptime monitoring best practices.",security,reliability
+5,chatbot,"This template includes a retrieval-based FAQ assistant. You can expand it with your own CSV knowledge base.",chatbot,rag,faq

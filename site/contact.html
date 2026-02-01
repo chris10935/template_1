@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Northstar Digital Studio</title>
+    <meta name="description" content="Book a call or request a quote." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="nav">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" alt="Northstar Digital Studio" />
+          <div>
+            <div class="name">Northstar Digital Studio</div>
+            <div class="tag">
+              Modern websites + simple automation (template)
+            </div>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+        <a class="nav-cta" href="contact.html">Book a Call</a>
+      </header>
+
+      <section class="section split">
+        <div class="card">
+          <h2>Book a call</h2>
+          <p class="lead">
+            Keep this page dead simple. The goal is to convert.
+          </p>
+
+          <!-- Option A: Netlify Forms (works when deployed on Netlify) -->
+          <form class="form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="row">
+              <input name="name" placeholder="Your name" required />
+              <input
+                name="email"
+                type="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+
+            <div class="row">
+              <input name="company" placeholder="Company (optional)" />
+              <select name="interest" required>
+                <option value="" disabled selected>
+                  What are you looking for?
+                </option>
+                <option>Launch site</option>
+                <option>Growth optimization</option>
+                <option>Enterprise build</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <textarea
+              name="message"
+              placeholder="What do you want your website to accomplish? (e.g., more calls, more quotes, better SEO)"
+              required
+            ></textarea>
+
+            <button class="btn primary" type="submit">Send request</button>
+            <small
+              >Template note: connect to email/CRM via Netlify, Formspree, or
+              your own backend.</small
+            >
+          </form>
+        </div>
+
+        <div class="card">
+          <h2>What happens next</h2>
+          <p class="lead">Use a short, confidence-building process block.</p>
+
+          <div
+            class="card"
+            style="
+              margin-top: 12px;
+              background: rgba(11, 18, 32, 0.35);
+              box-shadow: none;
+            "
+          >
+            <p><strong>1) Quick reply</strong> — within 1 business day.</p>
+            <p>
+              <strong>2) 15-min fit check</strong> — goals, timeline, and scope.
+            </p>
+            <p>
+              <strong>3) Proposal</strong> — clear deliverables + next steps.
+            </p>
+          </div>
+
+          <div class="notice" style="margin-top: 14px">
+            Prefer email? <strong>hello@example.com</strong><br />
+            Prefer phone? <strong>(555) 555-5555</strong>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div>
+            <div style="font-weight: 900">Northstar Digital Studio</div>
+            <p style="margin-top: 6px">
+              Modern service-site template: fast, clear, conversion-first.
+            </p>
+            <small
+              >© <span id="year"></span> Template. All rights reserved.</small
+            >
+          </div>
+          <div>
+            <div style="font-weight: 900">Pages</div>
+            <p style="margin: 8px 0 0">
+              <a href="index.html">Home</a><br />
+              <a href="about.html">About</a><br />
+              <a href="services.html">Services</a><br />
+              <a href="privacy.html">Privacy</a>
+            </p>
+          </div>
+          <div>
+            <div style="font-weight: 900">Location</div>
+            <p style="margin: 8px 0 0">
+              Your City, ST<br />
+              Hours: Mon–Fri (placeholder)
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
