@@ -57,19 +57,7 @@
           </div>
           <h1>
             Protect your interests with
-            <span
-              style="
-                background: linear-gradient(
-                  135deg,
-                  var(--accent),
-                  var(--accent2)
-                );
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-              "
-              >clear legal counsel</span
-            >.
+            <span class="slide-color-animate">clear legal counsel</span>.
           </h1>
           <p class="subhead">
             We help individuals and small businesses navigate contracts, real
@@ -387,5 +375,40 @@
 
     <script src="js/rag.js"></script>
     <script src="js/main.js"></script>
+    <style>
+      .slide-color-animate {
+        display: inline-block;
+        opacity: 0;
+        transform: translateX(-40px);
+        animation:
+          slideIn 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards,
+          colorChange 3s linear 1.2s infinite alternate;
+        background: linear-gradient(
+          135deg,
+          var(--accent),
+          var(--accent2),
+          #f7c873,
+          #6ec6ff,
+          #b388ff
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      @keyframes slideIn {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes colorChange {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+    </style>
   </body>
 </html>
