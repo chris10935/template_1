@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contact — Northstar Digital Studio</title>
-    <meta name="description" content="Book a call or request a quote." />
+    <title>Contact — Hawthorne & Vale Law Office</title>
+    <meta
+      name="description"
+      content="Request a consultation with our law office."
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="nav">
         <a class="brand" href="index.html">
-          <img src="assets/logo.svg" alt="Northstar Digital Studio" />
+          <img src="assets/logo.svg" alt="Hawthorne & Vale Law Office" />
           <div>
-            <div class="name">Northstar Digital Studio</div>
-            <div class="tag">
-              Modern websites + simple automation (template)
-            </div>
+            <div class="name">Hawthorne &amp; Vale Law Office</div>
+            <div class="tag">Client-first counsel for life and business</div>
           </div>
         </a>
         <nav class="nav-links">
@@ -25,14 +26,33 @@
           <a href="contact.html">Contact</a>
           <a href="privacy.html">Privacy</a>
         </nav>
-        <a class="nav-cta" href="contact.html">Book a Call</a>
+        <a class="nav-cta" href="contact.html">Request a Consultation</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Toggle navigation"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="nav-cta" href="contact.html">Request a Consultation</a>
+        </div>
       </header>
 
       <section class="section split">
         <div class="card">
-          <h2>Book a call</h2>
+          <h2>Request a consultation</h2>
           <p class="lead">
-            Keep this page dead simple. The goal is to convert.
+            Tell us a bit about your matter and we’ll follow up with next steps.
           </p>
 
           <!-- Option A: Netlify Forms (works when deployed on Netlify) -->
@@ -50,35 +70,36 @@
             </div>
 
             <div class="row">
-              <input name="company" placeholder="Company (optional)" />
-              <select name="interest" required>
+              <input name="phone" placeholder="Phone number" />
+              <select name="matter" required>
                 <option value="" disabled selected>
-                  What are you looking for?
+                  What type of matter is this?
                 </option>
-                <option>Launch site</option>
-                <option>Growth optimization</option>
-                <option>Enterprise build</option>
+                <option>Business / Contracts</option>
+                <option>Real Estate</option>
+                <option>Family Law</option>
+                <option>Estate Planning</option>
                 <option>Not sure yet</option>
               </select>
             </div>
 
             <textarea
               name="message"
-              placeholder="What do you want your website to accomplish? (e.g., more calls, more quotes, better SEO)"
+              placeholder="Briefly describe your situation and any key deadlines. Please do not include sensitive information."
               required
             ></textarea>
 
             <button class="btn primary" type="submit">Send request</button>
             <small
-              >Template note: connect to email/CRM via Netlify, Formspree, or
-              your own backend.</small
+              >Submitting this form does not create an attorney–client
+              relationship.</small
             >
           </form>
         </div>
 
         <div class="card">
           <h2>What happens next</h2>
-          <p class="lead">Use a short, confidence-building process block.</p>
+          <p class="lead">A simple, transparent intake process.</p>
 
           <div
             class="card"
@@ -88,18 +109,19 @@
               box-shadow: none;
             "
           >
-            <p><strong>1) Quick reply</strong> — within 1 business day.</p>
+            <p><strong>1) Quick reply</strong> — we confirm next steps.</p>
             <p>
-              <strong>2) 15-min fit check</strong> — goals, timeline, and scope.
+              <strong>2) Brief consult</strong> — goals, timeline, and scope.
             </p>
             <p>
-              <strong>3) Proposal</strong> — clear deliverables + next steps.
+              <strong>3) Engagement</strong> — clear scope and fees if we move
+              forward.
             </p>
           </div>
 
           <div class="notice" style="margin-top: 14px">
-            Prefer email? <strong>hello@example.com</strong><br />
-            Prefer phone? <strong>(555) 555-5555</strong>
+            Prefer email? <strong>intake@hawthornevale.com</strong><br />
+            Prefer phone? <strong>(555) 555-0148</strong>
           </div>
         </div>
       </section>
@@ -107,12 +129,13 @@
       <footer class="footer">
         <div class="footer-grid">
           <div>
-            <div style="font-weight: 900">Northstar Digital Studio</div>
+            <div style="font-weight: 900">Hawthorne &amp; Vale Law Office</div>
             <p style="margin-top: 6px">
-              Modern service-site template: fast, clear, conversion-first.
+              Practical legal counsel for individuals and small businesses.
             </p>
             <small
-              >© <span id="year"></span> Template. All rights reserved.</small
+              >© <span id="year"></span> Hawthorne &amp; Vale. All rights
+              reserved.</small
             >
           </div>
           <div>
@@ -128,7 +151,7 @@
             <div style="font-weight: 900">Location</div>
             <p style="margin: 8px 0 0">
               Your City, ST<br />
-              Hours: Mon–Fri (placeholder)
+              Hours: Mon–Fri, 9am–5pm
             </p>
           </div>
         </div>

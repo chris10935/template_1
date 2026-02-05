@@ -1,6 +1,7 @@
 id,topic,content,tags
-1,pricing,"Our service packages are monthly and designed for fast time-to-value. Most clients launch within 14–30 days depending on scope.",pricing,packages,timeline
-2,timeline,"Typical delivery: Discovery (2–3 days) → Build (7–14 days) → QA (2–4 days) → Launch.",timeline,process
-3,seo,"We implement technical SEO basics (metadata, headings, performance, mobile) and provide an on-page checklist for ongoing optimization.",seo,performance
-4,security,"Static sites reduce attack surface. We still apply HTTPS, forms hardening, and uptime monitoring best practices.",security,reliability
-5,chatbot,"This template includes a retrieval-based FAQ assistant. You can expand it with your own CSV knowledge base.",chatbot,rag,faq
+1,consultation,"We start with a brief consultation to understand your matter and determine next steps. A written engagement is required before representation begins.","consultation,process,engagement"
+2,fees,"Fees depend on scope and complexity. We discuss options such as flat-fee or hourly arrangements after an initial review.","fees,pricing,engagement"
+3,timeline,"Timelines vary by matter type and court schedules. We will outline expected milestones once we understand the facts.","timeline,process"
+4,confidentiality,"Please do not send sensitive details through the website. Contact form submissions do not create an attorney–client relationship.","confidentiality,disclaimer"
+5,documents,"Helpful items include relevant contracts, correspondence, court notices, and key dates.","documents,preparation"
+6,practice areas,"We assist with business contracts, family law matters, real estate transactions, and estate planning.","services,practice areas"

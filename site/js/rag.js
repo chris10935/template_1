@@ -191,7 +191,7 @@ window.RAG = (() => {
     if (!hits.length) {
       return {
         answer: `I didn’t find a strong match in the CSV knowledge base.\n
-Try:\n• using more specific keywords (e.g., “timeline”, “pricing”, “SEO”, “HVAC repair”)\n• adding more rows to data/faq_kb.csv or data/business.csv`,
+Try:\n• using more specific keywords (e.g., “consultation”, “fees”, “custody”, “real estate”)\n• adding more rows to data/faq_kb.csv or data/business.csv`,
         sources: [],
       };
     }
@@ -212,7 +212,7 @@ Try:\n• using more specific keywords (e.g., “timeline”, “pricing”, “
     // This template intentionally avoids APIs.
 
     return {
-      answer: `Here’s what I found in the knowledge base:\n\n${lines.join("\n\n")}\n\nIf you want, tell me which part you want to act on (pricing, timeline, SEO, or a specific business).`,
+      answer: `Here’s what I found in the knowledge base:\n\n${lines.join("\n\n")}\n\nIf you want, tell me which part you want to act on (fees, timeline, practice area, or a specific service).`,
       sources: hits.map((h) => h.sourceLabel),
     };
   }

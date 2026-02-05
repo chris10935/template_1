@@ -4,6 +4,43 @@
   if (y) y.textContent = new Date().getFullYear();
 })();
 
+// mobile nav toggle
+(() => {
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+  if (!toggle || !menu) return;
+
+  const openMenu = () => {
+    menu.classList.add("open");
+    toggle.setAttribute("aria-expanded", "true");
+  };
+
+  const closeMenu = () => {
+    menu.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  };
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (menu.classList.contains("open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  menu.addEventListener("click", (e) => e.stopPropagation());
+
+  document.addEventListener("click", () => closeMenu());
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) closeMenu();
+  });
+
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => closeMenu());
+  });
+})();
+
 // chat widget wiring (uses rag.js)
 (() => {
   const fab = document.getElementById("chatFab");
@@ -63,7 +100,7 @@
     );
 
   const defaultReply = () => {
-    return `I can help with:\n• Services + pricing (placeholder)\n• Timeline + process\n• What’s included in the Launch/Growth/Enterprise tiers\n\nTip: enable “Use RAG retrieval” to search your CSV knowledge base.`;
+    return `I can help with:\n• Practice areas and consultation steps\n• Typical timelines and process\n• Fee structure overview (varies by matter)\n\nTip: enable “Use RAG retrieval” to search your CSV knowledge base.`;
   };
 
   // Load RAG index (business.csv + faq_kb.csv)
@@ -109,6 +146,6 @@
   // initial greeting
   addMsg(
     "assistant",
-    "Hi—ask me anything about this template. Toggle RAG to retrieve answers from your CSV files.",
+    "Hi—ask me about practice areas, consultations, and what to expect. Toggle RAG to retrieve answers from your CSV files.",
   );
 })();
